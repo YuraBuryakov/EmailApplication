@@ -31,12 +31,12 @@ public class Email {
         System.out.println("Your email is: " + this.email);
     }
 
-    public Email(String firstName, String lastName, String password, String email){
+    public Email(String firstName, String lastName, String password, String email, int id){
         this.firstName = firstName;
         this.lastName = lastName;
         this.password = password;
         this.email = email;
-
+        this.id = id;
     }
 
     private String setDepartment() {
@@ -110,6 +110,8 @@ public class Email {
     }
 
     public String getEmail(){return email;}
+
+    public int getId(){return id;};
 
     public int getDefaultpasswordLenght(){
         return defaultpasswordLenght;
